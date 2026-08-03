@@ -2,12 +2,14 @@ locals {
   prefix = "contoso-order-platform-${var.environment}"
 
   names = {
-    resource_group = "${local.prefix}-rg"
-    storage        = "stcontosoorder${var.environment}jm"
-    service_bus    = "${local.prefix}-servicebus"
-    function_app   = "${local.prefix}-func"
-    key_vault      = "${local.prefix}-kv"
-    apim           = "${local.prefix}-apim"
+    resource_group        = "${local.prefix}-rg"
+    storage               = "stcontosoorder${var.environment}jm"
+    service_bus           = "${local.prefix}-servicebus"
+    function_app          = "${local.prefix}-func"
+    function_plan         = "${local.prefix}-func-plan"
+    function_host_storage = "stcontosofunc${var.environment}jm"
+    key_vault             = "${local.prefix}-kv"
+    apim                  = "${local.prefix}-apim"
   }
 
   common_tags = {

@@ -12,6 +12,10 @@ module "storage" {
   min_tls_version                 = "TLS1_2"
   allow_nested_items_to_be_public = false
 
+  tables = [
+    "OrderProcessing"
+  ]
+
   tags = merge(
     local.common_tags,
     {

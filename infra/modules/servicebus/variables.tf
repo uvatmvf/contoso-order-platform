@@ -28,10 +28,10 @@ variable "queues" {
   description = "Queues to create in the namespace."
 
   type = map(object({
-    name                                   = string
-    lock_duration                          = optional(string, "PT1M")
-    max_delivery_count                     = optional(number, 10)
-    dead_lettering_on_message_expiration   = optional(bool, true)
+    name                                 = string
+    lock_duration                        = optional(string, "PT1M")
+    max_delivery_count                   = optional(number, 10)
+    dead_lettering_on_message_expiration = optional(bool, true)
   }))
 
   default = {}
