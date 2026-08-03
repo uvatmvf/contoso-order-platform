@@ -13,7 +13,15 @@ resource "azurerm_storage_account" "this" {
   tags = var.tags
 }
 
-resource "azurerm_storage_table" "order_processing" {
-  name                 = "OrderProcessing"
+variable "tables" {
+  description = "Storage tables to create."
+  type        = set(string)
+  default     = []
+}
+
+resource "azurerm_storage_table" "this" {
+  for_each = var.tables
+
+  name                 = each.value
   storage_account_name = azurerm_storage_account.this.name
 }
