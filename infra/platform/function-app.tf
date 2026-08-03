@@ -9,7 +9,7 @@ module "function_app" {
   location            = azurerm_resource_group.integration.location
 
   service_plan_sku = "Y1"
-  dotnet_version    = "v10.0"
+  dotnet_version   = "v10.0"
 
   tags = local.common_tags
 }
