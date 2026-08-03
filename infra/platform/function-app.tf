@@ -13,6 +13,8 @@ module "function_app" {
 
   app_settings = {
     ServiceBusConnection__fullyQualifiedNamespace = module.servicebus.fully_qualified_namespace
+
+    OrderStateStorage__tableEndpoint = module.storage.primary_table_endpoint
   }
 
   tags = local.common_tags
