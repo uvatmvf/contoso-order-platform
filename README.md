@@ -122,8 +122,6 @@ No application secrets are required.
 
 # Modules
 
-Explain why they exist.
-
 ```text
 ## Modules
 
