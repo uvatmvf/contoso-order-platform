@@ -226,8 +226,6 @@ Deploy
 
 # Security
 
-I'd include a dedicated section.
-
 ```text
 ## Security
 
@@ -253,13 +251,6 @@ Secrets
 
 • None
 ```
-
-```text
-Secrets
-
-• None
-```
-
 ---
 
 # Future Improvements
