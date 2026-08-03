@@ -22,7 +22,7 @@ terraform.rc
 
 # Keep intentional environment configuration
 !infra/stage.tfvars
-!infra/platform/stage.tfvars
+!infra/platform/environment/stage.tfvars
 !infra/bootstrap/stage.tfvars
 
 # Local environment and editor files
