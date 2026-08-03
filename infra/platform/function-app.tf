@@ -11,5 +11,10 @@ module "function_app" {
   service_plan_sku = "Y1"
   dotnet_version   = "v10.0"
 
+  app_settings = {
+    ServiceBusConnection__fullyQualifiedNamespace =
+      module.servicebus.fully_qualified_namespace
+  }
+  
   tags = local.common_tags
 }

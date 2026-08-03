@@ -28,3 +28,8 @@ output "subscription_ids" {
     key => subscription.id
   }
 }
+
+output "fully_qualified_namespace" {
+  description = "Fully qualified Service Bus namespace hostname."
+  value       = "${azurerm_servicebus_namespace.this.name}.servicebus.windows.net"
+}
