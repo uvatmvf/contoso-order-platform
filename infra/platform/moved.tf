@@ -27,3 +27,8 @@ moved {
   from = azurerm_servicebus_subscription.integration["complete_order"]
   to   = module.servicebus.azurerm_servicebus_subscription.this["complete_order"]
 }
+
+moved {
+  from = azurerm_storage_account.integration
+  to   = module.storage.azurerm_storage_account.this
+}

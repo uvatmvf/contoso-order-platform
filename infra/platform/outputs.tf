@@ -1,11 +1,11 @@
 output "storage_account_name" {
-  description = "Name of the integration platform storage account."
-  value       = azurerm_storage_account.integration.name
+  description = "Name of the integration platform Storage account."
+  value       = module.storage.name
 }
 
 output "storage_account_id" {
-  description = "Azure resource ID of the integration platform storage account."
-  value       = azurerm_storage_account.integration.id
+  description = "Azure resource ID of the integration platform Storage account."
+  value       = module.storage.id
 }
 
 output "servicebus_namespace_name" {
