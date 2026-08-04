@@ -42,3 +42,14 @@ output "application_insights_name" {
   description = "Name of the platform Application Insights component."
   value       = module.monitoring.application_insights_name
 }
+
+output "logic_app_name" {
+  description = "Name of the stage place-order Logic App."
+  value       = module.logic_app.name
+}
+
+output "logic_app_callback_url" {
+  description = "HTTP endpoint for submitting place-order requests."
+  value       = module.logic_app.callback_url
+  sensitive   = true
+}
