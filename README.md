@@ -257,7 +257,6 @@ Secrets
 Roadmap
 
 - Application Insights
-<img width="1692" height="959" alt="image" src="https://github.com/user-attachments/assets/452a8818-b551-45c0-a516-57fc9b9f7145" />
 
 - Log Analytics
 
@@ -277,3 +276,4 @@ Roadmap
 
 - Azure Monitor Alerts
 ```
+<img width="1692" height="959" alt="image" src="https://github.com/user-attachments/assets/452a8818-b551-45c0-a516-57fc9b9f7145" />
