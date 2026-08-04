@@ -32,3 +32,13 @@ output "function_app_principal_id" {
   description = "Principal ID of the Function App managed identity."
   value       = module.function_app.principal_id
 }
+
+output "log_analytics_workspace_name" {
+  description = "Name of the platform Log Analytics workspace."
+  value       = module.monitoring.log_analytics_workspace_name
+}
+
+output "application_insights_name" {
+  description = "Name of the platform Application Insights component."
+  value       = module.monitoring.application_insights_name
+}
