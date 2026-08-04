@@ -32,3 +32,12 @@ resource "azurerm_servicebus_subscription" "this" {
   topic_id           = azurerm_servicebus_topic.order_events.id
   max_delivery_count = each.value.max_delivery_count
 }
+
+resource "azurerm_servicebus_subscription_rule" "this" {
+  for_each = var.subscriptions
+
+  name            = each.value.rule_name
+  subscription_id = azurerm_servicebus_subscription.this[each.key].id
+  filter_type     = "SqlFilter"
+  sql_filter      = each.value.sql_filter
+}

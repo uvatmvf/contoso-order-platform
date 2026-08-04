@@ -20,11 +20,15 @@ module "servicebus" {
 
   subscriptions = {
     authorize_payment = {
-      name = "authorize-payment"
+      name       = "authorize-payment"
+      rule_name  = "InventoryReserved"
+      sql_filter = "sys.Label = 'InventoryReserved'"
     }
 
     complete_order = {
-      name = "complete-order"
+      name       = "complete-order"
+      rule_name  = "PaymentAuthorized"
+      sql_filter = "sys.Label = 'PaymentAuthorized'"
     }
   }
 
