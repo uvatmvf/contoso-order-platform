@@ -24,8 +24,8 @@ locals {
 }
 
 resource "azurerm_resource_group" "integration" {
-  name     = "${local.prefix}-rg"
-  location = "West US 2"
+  name     = local.names.resource_group
+  location = var.location
 
   tags = local.common_tags
 }
