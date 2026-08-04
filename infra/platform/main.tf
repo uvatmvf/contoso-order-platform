@@ -8,6 +8,7 @@ locals {
     function_app          = "${local.prefix}-func"
     function_plan         = "${local.prefix}-func-plan"
     function_host_storage = "stcontosofunc${var.environment}jm"
+    logic_app             = "${local.prefix}-place-order"
     log_analytics         = "${local.prefix}-logs"
     application_insights  = "${local.prefix}-appinsights"
     key_vault             = "${local.prefix}-kv"
