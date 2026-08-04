@@ -48,6 +48,8 @@ variable "subscriptions" {
   type = map(object({
     name               = string
     max_delivery_count = optional(number, 10)
+    rule_name          = string
+    sql_filter         = string
   }))
 
   default = {}
