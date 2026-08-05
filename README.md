@@ -221,7 +221,7 @@ Publish
 Deploy
 ```
 ---
-
+[The function apps for this implementation are in another repository.](https://github.com/uvatmvf/Contoso.Integration)
 # Security
 
 ```text
